@@ -36,8 +36,7 @@
 # Total_Area: {"min": 60, "max": 130} 
 # **4. 邻接关系正确与否（只在“输入中明确给出邻接要求”时才校验）**
 # 房间之间邻接关系是否与输入要求一致。
-
-# %%
+# 
 # example_bad
 '''design ={
   "rooms": [
@@ -127,7 +126,6 @@ from .rules import (
     validate_required_adjacency
 )
 
-# %%
 # 总校验入口
 def validate_design(design, requirements=None):
     """

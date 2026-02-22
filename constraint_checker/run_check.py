@@ -1,10 +1,9 @@
-# constraint_checker/run_check.py
+# constraint_checker/run_check.py 对示例文件进行检验
 import json
 from pathlib import Path
 from .validator import validate_design
-from typing import Union, Optional
 # 导入统一的示例目录路径
-from utils.io import EXAMPLE_FILES, ensure_dir
+from utils.io import EXAMPLE_FILES, ensure_dir, REQUIREMENTS_JSON
 
 def run_example(design_path):
     """校验单个 design 示例"""
@@ -17,7 +16,7 @@ def run_example(design_path):
         design = json.load(f)
 
     # 读取requirements.json（使用统一路径）
-    req_path = design_path.with_name(design_path.stem + ".requirements.json")
+    req_path = REQUIREMENTS_JSON
     requirements = None
     if req_path.exists():
         with open(req_path, "r", encoding="utf-8") as f:

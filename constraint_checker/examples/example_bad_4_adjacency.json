@@ -25,6 +25,8 @@
 
     { "type": "Storage_1", "area": 5, "adjacent_to": { "Kitchen_1": "connected" } },
 
+    { "type": "BedRoom_2", "area": 9, "adjacent_to": { "LivingRoom_1": "connected" } },
+
     {
       "type": "BedRoom_1",
       "area": 12,

@@ -5,7 +5,6 @@ from constraint_checker import validate_design
 from design_ir import parse_design_to_graph
 import time
 import json
-import os
 import logging
 
 logging.basicConfig(
@@ -15,7 +14,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# 主程序中添加：将 SpatialGraph 转回 JSON 字典
 def graph_to_json_dict(spatial_graph):
     """把 SpatialGraph 转回原始 JSON 格式的字典"""
     rooms = []

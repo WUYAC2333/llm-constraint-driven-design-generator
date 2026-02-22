@@ -10,10 +10,12 @@
     },
     {
       "type": "LivingRoom_1",
-      "area": 18,
+      "area": 12,
       "adjacent_to": {
         "Entry_1": "by connected space",
         "BedRoom_1": "by door",
+        "BedRoom_2": "by door",
+        "BedRoom_3": "by door",
         "BathRoom_1": "by door",
         "DiningRoom_1": "by connected space",
         "Storage_1": "by door"
@@ -21,7 +23,21 @@
     },
     {
       "type": "BedRoom_1",
-      "area": 16,
+      "area": 9,
+      "adjacent_to": {
+        "LivingRoom_1": "by door"
+      }
+    },
+    {
+      "type": "BedRoom_2",
+      "area": 9,
+      "adjacent_to": {
+        "LivingRoom_1": "by door"
+      }
+    },
+    {
+      "type": "BedRoom_3",
+      "area": 9,
       "adjacent_to": {
         "LivingRoom_1": "by door"
       }
