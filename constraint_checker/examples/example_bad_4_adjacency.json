@@ -1,0 +1,36 @@
+{
+  "rooms": [
+    { "type": "Entry_1", "area": 5, "adjacent_to": { "LivingRoom_1": "connected" } },
+
+    {
+      "type": "LivingRoom_1",
+      "area": 22,
+      "adjacent_to": {
+        "Entry_1": "connected",
+        "DiningRoom_1": "connected",
+        "BedRoom_1": "connected"
+      }
+    },
+
+    { "type": "DiningRoom_1", "area": 12, "adjacent_to": { "LivingRoom_1": "connected", "Kitchen_1": "connected" } },
+
+    {
+      "type": "Kitchen_1",
+      "area": 9,
+      "adjacent_to": {
+        "Storage_1": "connected",
+        "DiningRoom_1": "connected"
+      }
+    },
+
+    { "type": "Storage_1", "area": 5, "adjacent_to": { "Kitchen_1": "connected" } },
+
+    {
+      "type": "BedRoom_1",
+      "area": 12,
+      "adjacent_to": {
+        "LivingRoom_1": "connected"
+      }
+    }
+  ]
+}

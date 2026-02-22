@@ -1,0 +1,27 @@
+llm:
+  provider: dashscope
+  api_key_env: DASHSCOPE_API_KEY # 环境变量名（正式环境）
+  api_key_fallback: your_api_key # 仅用于本地测试（可选）
+
+  url: https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+  model: qwen-turbo
+
+  generation:
+    temperature: 0.0
+    max_tokens: 512
+    stream: false
+    response_format:
+      type: json_object
+    stop: null
+
+  retry:
+    max_retries: 3
+    retry_delay: 8
+    timeout:
+      connect: 10
+      read: 40
+
+system_prompt: >
+  You must output a complete, valid JSON object.
+  Ensure all brackets are closed.
+  No extra text.

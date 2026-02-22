@@ -1,0 +1,33 @@
+{
+  "area": {
+    "Entry_1": 3
+  },
+  "adjacency": [
+    [
+      "Kitchen_1",
+      "DiningRoom_1"
+    ],
+    [
+      "LivingRoom_1",
+      "BedRoom_1"
+    ],
+    [
+      "LivingRoom_1",
+      "BedRoom_2"
+    ],
+    [
+      "LivingRoom_1",
+      "BedRoom_3"
+    ]
+  ],
+  "direction": {
+    "Kitchen_1": {
+      "DiningRoom_1": "NORTH"
+    },
+    "LivingRoom_1": {
+      "BedRoom_1": "SOUTH",
+      "BedRoom_2": "SOUTH",
+      "BedRoom_3": "SOUTH"
+    }
+  }
+}
